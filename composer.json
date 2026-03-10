@@ -1,0 +1,38 @@
+{
+    "name": "psc-acme/parser-product",
+    "description": "Package parser-product for psc-acme organization",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Philipp Scheit",
+            "email": "p.scheit@packagist.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "PscAcme\\ParserProduct\\": "src/"
+        }
+    },
+    "require": {
+        "php": ">=8.3",
+        "doctrine/dbal": "^4.0",
+        "vlucas/phpdotenv": "^5.0",
+        "psc-acme/gateway-cart": "^1.0",
+        "psc-acme/driver-cart": "^1.0"
+    },
+    "require-dev": {
+        "behat/behat": "^3.14"
+    },
+    "minimum-stability": "dev",
+    "config": {
+        "secure-http": false
+    },
+    "repositories": {
+        "private-packagist": {
+            "type": "composer",
+            "url": "http://repo.packagist.com.lo/psc-acme/"
+        },
+        "packagist.org": false
+    }
+}
